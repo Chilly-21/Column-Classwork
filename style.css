@@ -1,0 +1,76 @@
+:root {
+  /* ### Primary */
+
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+
+  /* ### Neutral */
+
+  --Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+  --Very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+}
+body {
+  color: var(--Transparent-white-paragraphs);
+  background-color: var(--Very-light-gray-background-headings-buttons);
+}
+.phil {
+  color: var(--Very-light-gray-background-headings-buttons);
+}
+.one {
+  background-color: var(--Bright-orange);
+  width: 250px;
+}
+.two {
+  background-color: var(--Dark-cyan);
+  width: 250px;
+}
+.three {
+  background-color: var(--Very-dark-cyan);
+  width: 250px;
+}
+.yemi {
+  margin: auto;
+  max-width: 750px;
+  padding-top: 100px;
+}
+.button {
+  cursor: pointer;
+  border: 2px solid var(--Bright-orange);
+  color: var(--Bright-orange);
+}
+.button:hover {
+  background-color: var(--Bright-orange);
+  border-color: var(--Transparent-white-paragraphs);
+  color: var(--Transparent-white-paragraphs);
+}
+.butto {
+  cursor: pointer;
+  border: 2px solid var(--Dark-cyan);
+  color: var(--Dark-cyan);
+}
+.butto:hover {
+  background-color: var(--Dark-cyan);
+  border-color: var(--Transparent-white-paragraphs);
+  color: var(--Transparent-white-paragraphs);
+}
+.butt {
+  cursor: pointer;
+  border: 2px solid var(--Very-dark-cyan);
+  color: var(--Very-dark-cyan);
+}
+.butt:hover {
+  background-color: var(--Very-dark-cyan);
+  border-color: var(--Transparent-white-paragraphs);
+  color: var(--Transparent-white-paragraphs);
+}
+
+@media (max-width: 500px) {
+  .yemi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    padding: 10px 10px;
+  }
+}
